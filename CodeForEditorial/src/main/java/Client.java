@@ -7,7 +7,7 @@ public class Client {
 
         for(int i = 1; i <= n; i++){
             TableCreator tc = new TableCreator(i);
-            Thread t = new Thread(tc);
+            ScalerThread t = new ScalerThread(tc);
             t.start();
         }
 
